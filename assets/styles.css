@@ -1,0 +1,26 @@
+/* Uses the same paper, ink and cinema typography as Both Pick. */
+:root {--ink:#28221F;--muted:#62584D;--rule:#C8BFA6;--red:#AC292E;--paper:#FFF5D6;}
+.stApp {background:var(--paper);color:var(--ink);}
+[data-testid="stSidebar"] {background:#F4E7BF;border-right:1px solid var(--rule);}
+[data-testid="stMainBlockContainer"] {max-width:1120px;padding-top:3.5rem;padding-bottom:3rem;}
+[data-testid="stVerticalBlock"] {gap:.65rem;}
+.movie-header {display:grid;grid-template-columns:1fr auto;align-items:center;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin-bottom:.65rem;}
+.kicker {grid-column:1/-1;font-size:.72rem;font-weight:700;letter-spacing:.22em;margin:.6rem 0 0;}
+h1.movie-mark {font-family:Impact,"Arial Narrow",sans-serif!important;font-weight:900;font-size:clamp(3rem,7vw,5.7rem)!important;line-height:.95;letter-spacing:-.035em;color:var(--red);margin:0;padding:.25rem 0 .4rem;}
+.movie-mark b {color:var(--ink);margin-left:.12em;}
+.billing {text-align:right;padding-left:1rem;font:bold 1.3rem/1.05 Georgia,serif;}
+.billing p {margin:0;}
+.billing em {color:var(--red);}
+h2,h3 {font-family:Georgia,serif!important;}
+[data-testid="stMetric"] {border-top:2px solid var(--ink);padding-top:.5rem;}
+[data-testid="stMetricValue"] {font-family:Georgia,serif;}
+[data-testid="stWidgetLabel"] p {font-size:.83rem;font-weight:650;}
+[data-testid="stCaptionContainer"] p {font-size:.78rem;color:var(--muted);}
+[data-baseweb="select"]>div {border-radius:2px!important;}
+[data-testid="stDownloadButton"] button {border-radius:2px;border:1px solid var(--ink);box-shadow:2px 2px 0 var(--ink);}
+[data-testid="stExpander"] {border-radius:0;border-color:var(--rule);}
+[data-baseweb="tab-list"] {gap:1.5rem;border-bottom:1px solid var(--ink);}
+[data-baseweb="tab"] {font-weight:700;font-size:.84rem;}
+[data-testid="stAlert"] {border-radius:0;}
+a {color:var(--red);}
+@media(max-width:640px) {.billing {display:none;} .kicker {font-size:.6rem;} [data-baseweb="tab-list"] {gap:.7rem;}}

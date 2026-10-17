@@ -1,0 +1,13 @@
+{
+  "publisher": "Stefano Leone",
+  "dataset_url": "https://www.kaggle.com/datasets/stefanoleone992/rotten-tomatoes-movies-and-critic-reviews-dataset",
+  "snapshot_date": "2020-10-31",
+  "dataset_version": 1,
+  "file": "rotten_tomatoes_movies.csv",
+  "sha256": "c21dbd4849691e9b938a1bba362e374bb1aa82d5178ce7b8e06a17c14c3e9251",
+  "license_as_listed_by_publisher": "CC0: Public Domain",
+  "unit": "One source title per Rotten Tomatoes link",
+  "rows": 17712,
+  "columns": 22,
+  "used": "Movie-level scores, counts and metadata. No review text or artwork."
+}
