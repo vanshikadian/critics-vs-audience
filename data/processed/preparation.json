@@ -1,0 +1,77 @@
+{
+  "pipeline_version": 1,
+  "source_snapshot": "2020-10-31",
+  "raw_sha256": "c21dbd4849691e9b938a1bba362e374bb1aa82d5178ce7b8e06a17c14c3e9251",
+  "processed_sha256": "b369fdfdd0e2303ac048bf405c9c2db00e0f5b7fc37912a25e9b6c2e2e2b0290",
+  "rows": 17712,
+  "columns": [
+    "rotten_tomatoes_link",
+    "movie_title",
+    "genres",
+    "original_release_date",
+    "release_year",
+    "release_period",
+    "content_rating",
+    "runtime",
+    "tomatometer_rating",
+    "audience_rating",
+    "tomatometer_count",
+    "audience_count",
+    "gap_pp",
+    "absolute_gap_pp",
+    "verdict",
+    "scores_valid",
+    "counts_valid",
+    "comparison_eligible"
+  ],
+  "quality": {
+    "rows": 17712,
+    "columns": 22,
+    "exact_duplicates": 0,
+    "duplicate_ids": 0,
+    "repeated_title_strings": 606,
+    "missing": {
+      "rotten_tomatoes_link": 0,
+      "movie_title": 0,
+      "movie_info": 321,
+      "critics_consensus": 8578,
+      "content_rating": 0,
+      "genres": 19,
+      "directors": 194,
+      "authors": 1542,
+      "actors": 352,
+      "original_release_date": 1166,
+      "streaming_release_date": 384,
+      "runtime": 314,
+      "production_company": 499,
+      "tomatometer_status": 44,
+      "tomatometer_rating": 44,
+      "tomatometer_count": 44,
+      "audience_status": 448,
+      "audience_rating": 296,
+      "audience_count": 297,
+      "tomatometer_top_critics_count": 0,
+      "tomatometer_fresh_critics_count": 0,
+      "tomatometer_rotten_critics_count": 0
+    },
+    "scores_outside_0_100": {
+      "tomatometer_rating": 0,
+      "audience_rating": 0
+    },
+    "nonpositive_counts": {
+      "tomatometer_count": 0,
+      "audience_count": 0
+    },
+    "critic_count_mismatches": 279
+  },
+  "paired_scores": 17407,
+  "comparison_eligible": 17406,
+  "missing_release_year": 1166,
+  "transformations": [
+    "Numeric scores, counts and runtime; no score imputation.",
+    "Release year and fixed release periods from original_release_date.",
+    "Audience minus critic approval and absolute gap, in percentage points.",
+    "Four groups based on whether each score is at least 60%.",
+    "Validity flags; all source titles retained. Filters are applied during analysis."
+  ]
+}

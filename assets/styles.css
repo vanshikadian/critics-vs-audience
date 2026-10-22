@@ -1,4 +1,3 @@
-/* Uses the same paper, ink and cinema typography as Both Pick. */
 :root {--ink:#28221F;--muted:#62584D;--rule:#C8BFA6;--red:#AC292E;--paper:#FFF5D6;}
 .stApp {background:var(--paper);color:var(--ink);}
 [data-testid="stSidebar"] {background:#F4E7BF;border-right:1px solid var(--rule);}
